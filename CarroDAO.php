@@ -5,9 +5,9 @@ class CarroDAO{
         $conexao = ConexaoBD :: conectar();
         $sql = 'insert into carro (modelo,marca, ono) value (?,?,?)';
         $stmt = $conexao-> prepare($sql);
-        $stmt-> bindParam(1, $dados[]);
-          $stmt-> bindParam(2, $dados[]);
-            $stmt-> bindParam(3, $dados[]);
+        $stmt-> bindParam(1, $dados['modelo']);
+          $stmt-> bindParam(2, $dados['marca']);
+            $stmt-> bindParam(3, $dados['ano']);
       
             $stmt ->execute();
     }
