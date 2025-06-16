@@ -13,7 +13,9 @@ class ConexaoBD{
 
         $conexao = new PDO ("pgsql:host=localhost;dbname=terceiro_a", "postgres","postgres");
         return $conexao;
+        
     }
+    
 }
 
 
