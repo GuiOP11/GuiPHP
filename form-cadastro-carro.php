@@ -14,31 +14,38 @@
 </head>
 
 <body class="container w-50 my-5 m-auto">
- <h2 class="text-center my-3">Cadastro de Carro</h2>
+    <h2 class="text-center my-3">Cadastro de Carro</h2>
     <form class="row g-3" action="cadastro-carro.php">
         <div class="form-container">
-           
 
-          
-                <div class="mb-3">
-                    <label for="modelo" class="form-label">Modelo:</label>
-                    <input type="text" class="form-control"  name="modelo" required>
-                </div>
 
-                <div class="mb-3">
-                    <label for="marca" class="form-label">Marca:</label>
-                    <input type="text" class="form-control"  name="marca" required>
-                </div>
 
-                <div class="mb-3">
-                    <label for="ano" class="form-label">Ano:</label>
-                    <input type="number" class="form-control" name="ano" min="1900" max="2099" required>
-                </div>
+            <div class="mb-3">
+                <label for="modelo" class="form-label">Modelo:</label>
+                <input type="text" class="form-control" name="modelo" required>
+            </div>
 
-                <button type="submit" class="btn btn-primary w-100 mt-3">Cadastrar</button>
+            <div class="mb-3">
+                <label for="marca" class="form-label">Marca:</label>
+               <!--  <input type="text" class="form-control" name="marca" required> -->
+                <select class="form-select" name="marca" aria-label="Default select example">
+                    <option selected>Selecione o modelo do carro</option>
+                    <option name="marca" >BWM</option>
+                    <option name="marca" >VolkWagen</option>
+                    <option name="marca"  >Ferrari</option>
+                    <option  name="marca" >FIAT</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="ano" class="form-label">Ano:</label>
+                <input type="number" class="form-control" name="ano" min="1900" max="2099" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 mt-3">Cadastrar</button>
         </div>
     </form>
-   
+
 </body>
 
 </html>
